@@ -5,6 +5,10 @@ import { ProgressComponent } from './progress/progress.component';
 import { PagesComponent } from './pages.component';
 import { sharedModule } from '../shared/shared.module';
 import { Pages_Routes } from './pages.routes';
+import { FormsModule } from '@angular/forms'
+import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
+import { ChartsModule } from 'ng2-charts';
+import { GraficodonaComponent } from '../components/graficodona/graficodona.component';
 
 
 
@@ -14,16 +18,21 @@ import { Pages_Routes } from './pages.routes';
         DashboardComponent,
         ProgressComponent,
         Graficas1Component,
+        IncrementadorComponent,
+        GraficodonaComponent
     ],
     exports:[
         DashboardComponent,
         ProgressComponent,
         Graficas1Component,
+        IncrementadorComponent
          
     ],
     imports : [
         sharedModule,
-        Pages_Routes
+        Pages_Routes,
+        FormsModule,
+        ChartsModule,
     ]
 })
 

@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
 import { PageModule } from './pages/pages.module';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -20,12 +21,14 @@ import { PageModule } from './pages/pages.module';
     LoginComponent,
     RegisterComponent,
     
+    
    
   ],
   imports: [
     BrowserModule,
     app_routes,
-    PageModule  
+    PageModule ,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
