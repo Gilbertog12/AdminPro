@@ -12,6 +12,10 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
 import { PageModule } from './pages/pages.module';
 import { FormsModule } from '@angular/forms';
+import { ServiceModule } from './services/service.module';
+
+
+
 
 
 
@@ -28,7 +32,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     app_routes,
     PageModule ,
-    FormsModule
+    FormsModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
