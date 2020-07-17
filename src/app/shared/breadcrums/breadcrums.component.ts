@@ -29,7 +29,7 @@ titulo: string
           
         }
 
-        meta.updateTag(metatag)
+        meta.updateTag(metatag )
     });
    }
 
